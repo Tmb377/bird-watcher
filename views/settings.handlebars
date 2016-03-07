@@ -1,0 +1,10 @@
+<h3>Settings</h3>
+<form action='/settings' method='post'>
+	{{#each minimumValue}}
+		<input class='box' type='text' name='minimumNumber' placeholder="{{val}}">
+	{{/each}}
+	<div><input class='button' type='submit' value='Set Minimum'></div>
+
+</form>
+<p></p>
+<a href='/birds'>List of Birds</a>

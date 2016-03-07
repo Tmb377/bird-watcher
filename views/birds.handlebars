@@ -1,0 +1,12 @@
+<h3>Sightings</h3>
+	<ul>
+		{{#each allBirds}}
+			<div class='center'><li><div><span class ='num'>{{numSeen}}</span> x {{bird}}</div></li></div>
+		{{/each}}
+	</ul>
+<form action='/birds' method='post'>
+	<input class='box' type='text' name='birdName'>
+	<div><input class='button' type='submit' value="Add Another Bird"></div>
+</form>
+<p></p>
+<a href="/settings">Settings</a>
